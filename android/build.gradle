@@ -1,0 +1,76 @@
+group 'com.enx_plugin.enx_flutter_plugin'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+       // classpath 'com.android.tools.build:gradle:3.3.3'
+
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 24
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+dependencies {
+//    implementation 'com.enxrtc:Enx-Rtc-Android:1.5.6'
+    //implementation 'org.webrtc:google-webrtc:1.0.30039'
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+    implementation('io.socket:socket.io-client:1.0.1') {
+        exclude group: 'org.json', module: 'json'
+    }
+   // implementation (name:'EnxRtcAndroid-release_2.3.1', ext:'aar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //implementation( ':EnxRtcAndroid')
+
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency
+            { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == "androidx") {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "1.+"
+            }
+        }
+    }
+}
