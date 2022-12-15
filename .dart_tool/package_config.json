@@ -32,18 +32,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "cupertino_icons",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "enx_flutter_plugin",
-      "rootUri": "../../",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "fake_async",
       "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -60,42 +48,6 @@
       "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.17"
-    },
-    {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/packages/flutter_web_plugins",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "fluttertoast",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "http",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "http_parser",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "js",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.16"
-    },
-    {
-      "name": "logger",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/logger-0.6.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
     },
     {
       "name": "matcher",
@@ -164,25 +116,19 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "typed_data",
-      "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "vector_math",
       "rootUri": "file:///Users/yasmeenmahmoud/flutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
-      "name": "enx_flutter_plugin_example",
+      "name": "enx_flutter_plugin",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-12-15T12:36:05.856512Z",
+  "generated": "2022-12-15T12:36:05.651435Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }
